@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <script>
+      let a;
+      let o;
+      let b;
+
+      a = prompt("donner un entier:");
+      o = prompt("un opérateur:");
+      b = prompt("donner un autre entier:");
+
+      function hello(va, vo, vb) {
+        alert("valeur de a est:" + va);
+        alert("opérateur est:" + vo);
+        alert("valeur de b est:" + vb);
+      }
+
+      if (o == "+") {
+        hello(a, o, b);
+        alert(parseInt(a) + parseInt(b));
+      } else if (o == "-") {
+        hello(a, o, b);
+        alert(parseInt(a) - parseInt(b));
+      } else if (o == "*") {
+        hello(a, o, b);
+        alert(parseInt(a) * parseInt(b));
+      } else {
+        hello(a, o, b);
+        alert("erreur");
+      }
+    </script>
+  </body>
+</html>
